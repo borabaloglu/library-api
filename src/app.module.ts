@@ -6,6 +6,7 @@ import databaseConfig from 'src/shared/config/database.config';
 import { AutoIncrement } from 'src/shared/plugin/auto-increment.plugin';
 
 import { BooksModule } from 'src/modules/books/books.module';
+import { UsersModule } from 'src/modules/users/users.module';
 
 @Module({
 	imports: [
@@ -16,6 +17,7 @@ import { BooksModule } from 'src/modules/books/books.module';
 			},
 		}),
 		BooksModule,
+		UsersModule,
 	],
 	controllers: [],
 	providers: [],
