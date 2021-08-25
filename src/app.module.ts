@@ -15,6 +15,8 @@ import { UsersModule } from 'src/modules/users/users.module';
 				AutoIncrement.setPlugin(require('mongoose-sequence')(connection));
 				return connection;
 			},
+			useNewUrlParser: true,
+			useUnifiedTopology: true,
 		}),
 		BooksModule,
 		UsersModule,

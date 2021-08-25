@@ -36,6 +36,7 @@ export class UsersController {
 		@Param('userId', ParseIntPipe) userId: number,
 		@Param('bookId', ParseIntPipe) bookId: number,
 	): Promise<void> {
+		await this.usersService.findOneById(userId); // Check if user exists
 		await this.booksService.borrow(bookId, userId);
 	}
 
@@ -46,6 +47,7 @@ export class UsersController {
 		@Param('bookId', ParseIntPipe) bookId: number,
 		@Body() returnBookDto: ReturnBookDto,
 	): Promise<void> {
+		await this.usersService.findOneById(userId); // Check if user exists
 		await this.booksService.return(bookId, userId, returnBookDto);
 	}
 }
