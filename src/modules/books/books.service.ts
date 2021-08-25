@@ -4,8 +4,8 @@ import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 
-import { AlreadyBorrowedError, NotBorrowedError } from 'src/shared/error/book.error';
-import { MissingRecordError } from 'src/shared/error/database.error';
+import { AlreadyBorrowedError, NotBorrowedError } from 'src/shared/errors/book.error';
+import { MissingRecordError } from 'src/shared/errors/database.error';
 
 import { CreateBookDto } from 'src/modules/books/dto/create-book.dto';
 import { ReturnBookDto } from 'src/modules/books/dto/return-book.dto';

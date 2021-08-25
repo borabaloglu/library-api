@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 
-import databaseConfig from 'src/shared/config/database.config';
+import databaseConfig from 'src/shared/configs/database.config';
 
-import { AutoIncrement } from 'src/shared/plugin/auto-increment.plugin';
+import { AutoIncrement } from 'src/shared/plugins/auto-increment.plugin';
 
 import { BooksModule } from 'src/modules/books/books.module';
 import { UsersModule } from 'src/modules/users/users.module';

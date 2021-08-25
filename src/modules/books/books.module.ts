@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 
-import { AutoIncrement } from 'src/shared/plugin/auto-increment.plugin';
+import { AutoIncrement } from 'src/shared/plugins/auto-increment.plugin';
 
 import { BooksController } from 'src/modules/books/books.controller';
 
